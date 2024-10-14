@@ -20,7 +20,7 @@ public class AdnController {
 
     @PostMapping
     public ResponseEntity<AdnResponse> checkMutant(@Valid @RequestBody AdnRequest adnRequest) {
-        boolean isMutant = adnService.analyzeAdn(adnRequest.getAdn());
+        boolean isMutant = adnService.analizarAdn(adnRequest.getAdn());
         AdnResponse adnResponse = new AdnResponse(isMutant);
         if (isMutant) {
             return ResponseEntity.ok(adnResponse);

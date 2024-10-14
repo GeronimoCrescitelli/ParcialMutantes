@@ -118,7 +118,7 @@ public class AdnService {
     }
 
     // Analiza una secuencia de ADN para determinar si es mutante y la guarda en la base de datos.
-    public boolean analyzeAdn(String[] adn) {
+    public boolean analizarAdn(String[] adn) {
         String adnSequence = String.join(",", adn);  // Convierte la matriz de ADN en una cadena unida por comas.
 
         // Verifica si el ADN ya existe en la base de datos.
