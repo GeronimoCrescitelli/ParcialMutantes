@@ -1,4 +1,4 @@
-#TRABAJO PARCIAL PROGRAMACIÓN 3 - MUTANTES
+# TRABAJO PARCIAL PROGRAMACIÓN 3 - MUTANTES
 ## Consigna
 Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar contra los X-Mens.
 
@@ -17,11 +17,11 @@ El usuario debe de ingresar en formato JSON un array de Strings que formen una m
 
 
 ## Despliegue
-El proyecto se encuentra alojado en Render y podran acceder a travez del siguiente link.
+El proyecto se encuentra alojado en Render y podran acceder a través del siguiente link.
 
 https://parcialmutantes.onrender.com
 
-Al mismo tiempo podras ingresar al siguiente link para ver la base de datos en memoria de H2 donde se cargan los DNA.
+Al mismo tiempo podras ingresar al siguiente link para ver la base de datos en memoria de H2 donde se cargan los ADN.
 
 http://localhost:8080/h2-console/
 
@@ -32,14 +32,14 @@ Credenciales de acceso a la base de datos en memoria:
 
 ## Endpoints y Ejemplos
 * ### Endpoint /mutant
-Este endpoint de tipo **POST** recibe como parametro un JSON con la matriz que contiene el DNA. 
+Este endpoint de tipo **POST** recibe como parametro un JSON con la matriz que contiene el ADN. 
 #### Criterios de aceptacion
 - **Clave `adn`**: Debe ser un arreglo de strings representando cada fila de la matriz de ADN.
 #### Respuestas del Endpoint
 - **Mutante detectado**: Devuelve HTTP 200 OK.
 - **No es mutante**: Devuelve HTTP 403 Forbidden.
 - **Ingreso inválido**: Devuelve un HTTP 400 Bad Request, si ingresamos una secuencia no valida como por podria ser una matriz que **NO** sea de NxN, un arreglo vacio, una letra no valida, un array de null o una fila null.
-###### Request de un DNA mutante
+###### Request de un ADN mutante
 ```json
 {
   "adn": [
@@ -54,15 +54,15 @@ Este endpoint de tipo **POST** recibe como parametro un JSON con la matriz que c
 ```
 Esta matriz tiene mas de una secuencia de cuatro letras iguales, esto quiere decir que el **ADN** ingresado es de un **_MUTANTE_**.
 
-###### Response del DNA anterior
+###### Response del ADN anterior
 
 ```json
 {
   
   "mutant": true
 }
-
-###### Request de un DNA no valido
+```
+###### Request de un ADN no valido
 ```json
 {
   "dna": [
@@ -75,7 +75,7 @@ Esta matriz tiene mas de una secuencia de cuatro letras iguales, esto quiere dec
   ] 
 }
 ```
-###### Response de un DNA no valido
+###### Response de un ADN no valido
 ```json
 {
     "status": 400,
@@ -86,7 +86,7 @@ Esta matriz tiene mas de una secuencia de cuatro letras iguales, esto quiere dec
 
 
 * ### Endpoint /stats
-Este endpoint de tipo **GET** nos devuelve un JSON con la cantidad de DNA mutantes verificados, la cantidad de DNA humanos verificados y un ratio de cada cuantos humanos cuantos mutantes hay.
+Este endpoint de tipo **GET** nos devuelve un JSON con la cantidad de ADN mutantes verificados, la cantidad de ADN humanos verificados y un ratio de cada cuantos humanos cuantos mutantes hay.
 
 ###### Respons del endpoint /stats
 
