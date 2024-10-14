@@ -1,4 +1,4 @@
-#TRABAJO PARCIAL PROGRAMACIÓN 3 - MUTANTES
+# TRABAJO PARCIAL PROGRAMACIÓN 3 - MUTANTES
 ## Consigna
 Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar contra los X-Mens.
 
