@@ -26,7 +26,7 @@ Al mismo tiempo podras ingresar al siguiente link para ver la base de datos en m
 http://localhost:8080/h2-console/
 
 Credenciales de acceso a la base de datos en memoria:
-* URL: jdbc:h2:mem:testdb
+* URL: jdbc:h2:file:/data/mut-db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
 * USERNAME: sa
 * NO INGRESE PASSWORD
 

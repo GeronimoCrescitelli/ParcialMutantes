@@ -16,6 +16,7 @@ public class Adn implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
 
+    @Column(nullable = false, columnDefinition = "TEXT") // Cambiar a TEXT para permitir cadenas de adn muy largas
     private String adn;
 
     private boolean isMutant;
