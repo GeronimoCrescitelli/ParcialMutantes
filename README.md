@@ -61,7 +61,7 @@ Esta matriz tiene mas de una secuencia de cuatro letras iguales, esto quiere dec
   
   "mutant": true
 }
-
+```
 ###### Request de un DNA no valido
 ```json
 {
