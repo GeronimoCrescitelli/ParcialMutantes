@@ -21,11 +21,15 @@ El proyecto se encuentra alojado en Render y podran acceder a través del siguie
 
 https://parcialmutantes.onrender.com
 
-Al mismo tiempo podras ingresar al siguiente link para ver la base de datos en memoria de H2 donde se cargan los ADN.
+Al mismo tiempo podras ingresar al siguiente link para ver la base de datos de H2 donde se cargan los ADN.
+
+https://parcialmutantes.onrender.com/h2-console/
+
+En caso de querer utilizar el proyecto localmente, para ingresar a la base de datos debemos correr la aplicación e ingresar a: 
 
 http://localhost:8080/h2-console/
 
-Credenciales de acceso a la base de datos en memoria:
+Credenciales de acceso a la base de datos en H2, tanto como para la versión en Render como en el proyecto local:
 * URL: jdbc:h2:file:/data/mut-db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
 * USERNAME: sa
 * NO INGRESE PASSWORD
