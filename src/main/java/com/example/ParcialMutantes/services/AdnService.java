@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
-@Service  // Esta anotación indica que la clase es un servicio de Spring, lo que la convierte en un componente de negocio.
+@Service
 public class AdnService {
 
     private final AdnRepository adnRepository;  // Inyecta una dependencia del repositorio para interactuar con la base de datos.
